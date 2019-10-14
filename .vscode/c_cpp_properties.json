@@ -4,8 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${vcpkgRoot}/x64-linux/include",
-                "${workspaceFolder}/3rdparty/SDL2-2.0.10/**"
+                "${vcpkgRoot}/x64-linux/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",
@@ -17,8 +16,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${vcpkgRoot}/x86-windows/include",
-                "${workspaceFolder}/3rdparty/SDL2-2.0.10/**"
+                "${vcpkgRoot}/x86-windows/include"
             ],
             "defines": [
                 "_DEBUG",

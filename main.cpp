@@ -6,9 +6,9 @@
 #ifdef _WIN32
 #include <windows.h>
 #endif
-#include "include/structs.hpp"
-#include "include/simulator.hpp"
-#include "include/visualizers.hpp"
+#include "structs.hpp"
+#include "simulator.hpp"
+#include "visualizers.hpp"
 
 static constexpr int SCREEN_WIDTH = 640;
 static constexpr int SCREEN_HEIGHT = 480;
@@ -18,7 +18,7 @@ static constexpr int CAR_SIZE_SMALL = 20;
 static constexpr int CAR_SIZE_BIG = 40;
 static constexpr int DELAY_BETWEEN_FRAMES_MS = 10;
 
-#ifdef __WIN32__
+#ifdef _WIN32
 int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 #else
 int main(int argc, char **argv)

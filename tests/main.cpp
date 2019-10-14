@@ -1,6 +1,6 @@
 #include <vector>
 #include <gtest/gtest.h>
-#include "../include/structs.hpp"
+#include "structs.hpp"
 
 TEST(Rect, RectIntersections)
 {
