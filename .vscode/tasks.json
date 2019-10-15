@@ -1,0 +1,66 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "linux": {
+                "command": "clang++",
+                "args": [
+                    "main.cpp",
+                    "-o",
+                    "build/linux/out",
+                    "-g",
+                    "-std=c++14",
+                    "-I./3rdparty/SDL2-2.0.10",
+                    "-L./libs/sdl2/linux",
+                    "-lSDL2-2.0",
+                    "-lm",
+                    "-lpthread"
+                ]
+            },
+            "windows": {
+                "command": "g++",
+                "args": [
+                    "main.cpp",
+                    "-o",
+                    "build/windows/out",
+                    "-g",
+                    "-std=c++14",
+                    "-I./3rdparty/SDL2-2.0.10",
+                    "-w",
+                    "-Wl,-subsystem,windows",
+                    "-L.",
+                    "-L./libs/sdl2/windows/i686-w64-mingw32",
+                    "-static-libstdc++",
+                    "-lpthread",
+                    "-lSDL2main",
+                    "-lSDL2"
+                ]
+            },
+            "label": "build",
+            "type": "shell"
+        },
+        {
+            "linux": {
+                "command": "clang++",
+                "args": [
+                    "tests/main.cpp",
+                    "-o",
+                    "build/linux/tests",
+                    "-g",
+                    "-std=c++14",
+                    "-I./3rdparty/SDL2-2.0.10",
+                    "-L./libs/sdl2/linux",
+                    "-lSDL2-2.0",
+                    "-lm",
+                    "-lpthread",
+                    "-lgtest_main",
+                    "-lgtest"
+                ]
+            },
+            "label": "build (tests)",
+            "type": "shell"
+        }
+    ]
+}

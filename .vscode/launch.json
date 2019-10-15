@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug (LLDB)",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build",
+            "windows": {
+                "program": "${workspaceFolder}/build/windows/out.exe"
+            },
+            "linux": {
+                "program": "${workspaceFolder}/build/linux/out"
+            }
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug tests",
+            "program": "${workspaceFolder}/tests/out",
+            "args": [],
+            "cwd": "${workspaceFolder}/tests",
+            "preLaunchTask": "test"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+BasedOnStyle: Google
+IndentWidth: 2
+ContinuationIndentWidth: 0
+SortIncludes: false
+ColumnLimit: 200
+AlignAfterOpenBracket: Align
+AlignOperands: true
+PointerAlignment: Right
+DerivePointerAlignment: false
+AlignTrailingComments: true
+AlwaysBreakTemplateDeclarations: true
+SpaceAfterTemplateKeyword: true
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: true
+BraceWrapping:
+  AfterClass:      false
+  AfterControlStatement: false
+  AfterEnum:       false
+  AfterFunction:   false
+  AfterNamespace:  false
+  AfterObjCDeclaration: false
+  AfterStruct:     false
+  AfterUnion:      false
+  BeforeCatch:     false
+  BeforeElse:      false
+  IndentBraces:    false
+BreakBeforeBraces: Custom
