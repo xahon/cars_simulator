@@ -79,5 +79,10 @@ int main(int argc, char **argv)
 
   delete display;
   display = nullptr;
+  for (int i = 0; i < CARS_COUNT; ++i) {
+    delete roadData.cars[i];
+    roadData.cars[i] = nullptr;
+  }
+
   return 0;
 }
